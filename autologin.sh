@@ -24,6 +24,6 @@ do
 	[[ $oneline == "#"* ]] && echo "$oneline"
 	[[ $oneline == "#"* ]] || echo "# $oneline"
 done >>"tty${2}.conf"
-echo "exec /sbin/getty -n -1 /usr/bin/autologin -8 38400 tty${2}" >>"tty${2}.conf"
+echo "exec /sbin/getty -n -l /usr/bin/autologin -8 38400 tty${2}" >>"tty${2}.conf"
 
 echo "After reboot it will work."
