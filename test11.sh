@@ -131,7 +131,7 @@ else
 	echo "Sorry, you are not the owner of /etc/passwd"
 fi
 
-# -G check if it is owned by your group
+# -G check if it is owned by your group (default group)
 if [ -G /etc/passwd ]
 then
 	echo "You are in the same group as the file"
